@@ -1,10 +1,10 @@
 package proxy
 
 import (
-	"github.com/sammy007/open-ethereum-pool/api"
-	"github.com/sammy007/open-ethereum-pool/payouts"
-	"github.com/sammy007/open-ethereum-pool/policy"
-	"github.com/sammy007/open-ethereum-pool/storage"
+	"github.com/HawyUkr/open-progpow-pool/api"
+	"github.com/HawyUkr/open-progpow-pool/payouts"
+	"github.com/HawyUkr/open-progpow-pool/policy"
+	"github.com/HawyUkr/open-progpow-pool/storage"
 )
 
 type Config struct {
@@ -61,4 +61,6 @@ type Upstream struct {
 	Name    string `json:"name"`
 	Url     string `json:"url"`
 	Timeout string `json:"timeout"`
+        Username string `json:"username"`
+        Password string `json:"password"`
 }
